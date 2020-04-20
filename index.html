@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Block maniplulation</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row">
+		<div class="col-2">
+			<h3 class="block-heading">Position Y</h3>
+			<div class="wrapper">
+				<div class="input-wrapper vertical"> 
+					<input type="range" id="pos-y" min="0" max="600" value="0">
+					<label for="pos-y">
+						<span>0</span>
+						<span>600</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<h3 class="block-heading">Position X</h3>
+			<div class="wrapper">
+				<div class="input-wrapper horizontal"> 
+					<label for="pos-x">
+						<span>0</span>
+						<span>800</span>
+					</label>
+					<input type="range" id="pos-x" min="0" max="800" value="0">
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<h3 class="block-heading">Size</h3>
+			<div class="wrapper">
+				<div class="input-wrapper horizontal"> 
+					<label for="size">
+						<span>0</span>
+						<span>2</span>
+					</label>
+					<input type="range" id="size" min="0" max="2" step="0.1">
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<h3 class="block-heading">Opacity</h3>
+			<div class="wrapper">
+				<div class="input-wrapper horizontal"> 
+					<label for="opacity">
+						<span>0</span>
+						<span>1</span>
+					</label>
+					<input type="range" id="opacity" min="0" max="1" step="0.01" value="1">
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<h3 class="block-heading">Shape Type</h3>
+			<div class="wrapper center">
+				<select id="shape-select">
+					<option value="1">Square</option>
+					<option value="2">Circle</option>
+					<option value="3">Rhombus</option>
+				</select>
+				<button id="ok-shape">Oke</button>
+			</div>
+		</div>
+		<div class="col-2">
+			<h3 class="block-heading">HEX</h3>
+			<div class="wrapper">
+				<div class="input-wrapper hex-container">
+					<label for="hex">#</label>
+					<input type="text" id="hex">
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<h3 class="block-heading">RGBA</h3>
+			<div class="wrapper rgba-container">
+				<input type="range" min="0" max="255" id="rgba-r" value="255"><label for="rgba-r">r</label>
+				<input type="range" min="0" max="255" id="rgba-g" value="0"><label for="rgba-g">g</label>
+				<input type="range" min="0" max="255" id="rgba-b" value="0"><label for="rgba-b">b</label>
+				<input type="range" min="0" max="1" id="rgba-a" step="0.01" value="1"><label for="rgba-a">a</label>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="wrapper">
+		<div id="block" class="col-2">
+			
+		</div>
+
+	</div>
+	</div>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
